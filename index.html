@@ -15,12 +15,10 @@
   </head>
   <body ng-app="codifyStudents">
     <!-- call to action section -->
-
     <section id="call-to-action">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-3">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
+          <h1 id="mtop15" class="display-2 text-center">Codify Academy Graduates - Where Our Elite Reside</h1>
         </div>
       </div>
     </section>
@@ -28,58 +26,35 @@
     <!-- logos of places students have been hired at -->
     <section id="companies-hired-at">
       <div id="owl-demo">
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-        <div class="item"><img src="img/placeholder.png" alt="Owl Image"></div>
-       
+        <div class="item"><img src="img/companies/apple.png" alt="Apple"></div>
+        <div class="item"><img src="img/companies/walmart2.png" alt="Walmart"></div>
+        <div class="item"><img src="img/companies/crunchyroll2.png" alt="Cruncy Roll"></div>
+        <div class="item"><img src="img/companies/art.png" alt="Art.com"></div>
+        <div class="item"><img src="img/companies/pearson.png" alt="Pearson Publishing"></div>
+        <div class="item"><img src="img/companies/sfu.png" alt="San Francisco University"></div>
+        <div class="item"><img src="img/companies/airbnb.png" alt="Air B &amp; B"></div>
+        <div class="item"><img src="img/companies/shutterfly.png" alt="Shutterfly"></div>
+        <div class="item"><img src="img/companies/levenstudios.png" alt="Leven Studios"></div>
+        <div class="item"><img src="img/companies/revolution11.png" alt="Owl Image"></div>       
       </div>
     </section>
 
     <!-- current available students -->
-    <section id="current-students">
+    <section id="current-students" ng-controller="studentCtrl">
       <div class="container-fluid">
-        <div class="row panel" style="padding:5px;">
-          <div class="col-md-4 bg_blur ">
+        <div class="row panel" style="padding:5px;" ng-repeat="x in students">
+          <div class="col-md-4 blur_bg" ng-style="{'background-image':'url({{x.imageLarge}})'}">
           </div>
           <div class="col-md-8  col-xs-12">
-            <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture" />
+            <img src="{{x.imageSmall}}" class="img-thumbnail picture hidden-xs" />
             <div class="header">
-              <h1>Student Name</h1>
+              <h1>{{x.name}}</h1>
               <h4>Strengths</h4>
-              <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
-              <h4>Languages</h4>
-              <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
+              <span>{{x.strengths}}</span>
+              <h4>About Me</h4>
+              <span>{{x.about}}</span>
               <br><br>
-              <h4 class="text-center"><a href="http://www.codifyacademy.com">www.websiteurl.com</a></h4>
-            </div>
-          </div> 
-        </div>  
-        <hr>
-        <div class="row panel" style="padding:5px;">
-          <div class="col-md-4 bg_blur ">
-          </div>
-          <div class="col-md-8  col-xs-12">
-            <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="img-thumbnail picture hidden-xs" />
-            <div class="header">
-              <h1>Student Name</h1>
-              <h4>Strengths</h4>
-              <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
-              <h4>Languages</h4>
-              <span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
-              <br><br>
-              <h4 class="text-center"><a href="http://www.codifyacademy.com">www.websiteurl.com</a></h4>
+              <h4 class="text-center"><a href="{{x.profile}}">{{x.profile}}</a></h4>
             </div>
           </div> 
         </div>
