@@ -26,7 +26,7 @@ app.controller('studentCtrl', ['$scope', function ($scope) {
 			imageLarge: "img/brian-large.jpg",
 			imageSmall: "img/brian-small.jpg",
 			strengths: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula lectus, tincidunt et justo in, mollis sollicitudin orci. Nullam congue iaculis quam.",
-			about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula lectus, tincidunt et justo in, mollis sollicitudin orci. Nullam congue iaculis quam.",
+			about: "Brian is a passionate guy with a knack for picking new information up quickly and being able to use it with great efficiency. A very personable and laid back developer, Brian would make a great team member and team leader for your company and its projects.",
 			profile: "http://builtbybrian.net"
 		}
 		,
@@ -35,7 +35,7 @@ app.controller('studentCtrl', ['$scope', function ($scope) {
 			imageLarge: "img/iqbal-large.png",
 			imageSmall: "img/iqbal-small.png",
 			strengths: "15+ years designing, HTML5, CSS3 and ES6 aka JavaScript",
-			about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula lectus, tincidunt et justo in, mollis sollicitudin orci. Nullam congue iaculis quam.",
+			about: "Iqbal is at the top of his talent pool. With 10+yrs of design experience and fortified Front End Developer knowledge the only thing missing, is working with your company! Iqbal enjoys trail walking trails in his spare time as well as design and photography.",
 			profile: "http://www.iqbalFrontEnd.com"
 		}
 		,
@@ -44,7 +44,7 @@ app.controller('studentCtrl', ['$scope', function ($scope) {
 			imageLarge: "img/billy-large.png",
 			imageSmall: "img/billy-small.png",
 			strengths: "Illustrator, HTML5, CSS3, JavaScipt",
-			about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula lectus, tincidunt et justo in, mollis sollicitudin orci. Nullam congue iaculis quam.",
+			about: "Billy is a grad with a MechSci degree. He is always pushing to learn more and looking for that perfect place to unleash his skills and get your productivity rollin! Get this Front End Developer while he is still here!",
 			profile: "http://www.billybatesweb.com/"
 		},
 		{
@@ -52,7 +52,7 @@ app.controller('studentCtrl', ['$scope', function ($scope) {
 			imageLarge: "img/psj-large.jpg",
 			imageSmall: "img/psj-small.jpg",
 			strengths: "MEAN Stack, HTML5, CSS3, JavaScript",
-			about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula lectus, tincidunt et justo in, mollis sollicitudin orci. Nullam congue iaculis quam.",
+			about: "Patrick is a coding crazy man! Self motivated and working for a non-profit while finding the right fit for his coding, he is always working on his knowledge of the MEAN stack and ready for your challenge!",
 
 			profile: ""
 		}
